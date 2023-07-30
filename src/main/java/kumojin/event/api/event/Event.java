@@ -25,7 +25,7 @@ public class Event {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ssXXX", timezone = JsonFormat.DEFAULT_TIMEZONE)
     private Instant endDate;
     public Event(EventDTO data) {
-        this.name = data.title();
+        this.name = data.name();
         this.description = data.description();
         this.startDate = data.startDate();
         this.endDate = data.endDate();
